@@ -1,0 +1,79 @@
+  <! primeira parte -->
+    <div class="image">
+      <img mat-card-image src ="https://www.petlove.com.br/images/breeds/192470/header/original/pugs_h.jpg?1521234198" alt="Photo of Pugs">
+    </div>
+    <div class="description">
+      <mat-grid-list cols="1" rowHeight="450px">
+        <mat-grid-tile>
+          <mat-card class="cardBreed">
+            <mat-card-header>
+                    <mat-card-title class="titleText">Sobre a Raça Pug</mat-card-title>
+            </mat-card-header>
+            <mat-card-content >
+              <p>
+                Essa raça é uma das mais antigas que existe. Foram encontrados indícios de cachorros muito parecidos com o Pug datados de 1700
+                antes de Cristo! No entanto, não se tem certeza absoluta de sua origem. Existem teorias de que o Pug surgiu do cruzamento de
+                diversas outras raças como o Pequinês ou ainda o Mastife Francês. O que se tem certeza é de que os Pugs surgiram em algum local
+                da China e eram cachorros pertencentes à realeza. Esses cãezinhos foram levados para a Holanda e a partir de lá atingiram outros
+                países da Europa onde receberam diferentes nomes. Na França ficaram conhecidos como "Carlin", na Espanha como "Dugollo", na
+                Alemanha eram os "Mops" e na Itália eram chamados de "Caganlino". Os Pugs chegaram aos EUA após a Guerra Civil e foram
+                reconhecidos como raça oficial pelo Kennel Club em 1885.
+              </p>
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="table">
+            <table cdk-table [dataSource]="dataSource">
+                <ng-container cdkColumnDef="name">
+                    <th cdk-header-cell *cdkHeaderCellDef align="start" class="titleTableText"> Características </th>
+                  <td cdk-cell *cdkCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+              <ng-container cdkColumnDef="symbol">
+                <th cdk-header-cell *cdkHeaderCellDef> </th>
+                <td cdk-cell *cdkCellDef="let element">
+                    <span *ngFor="let n of numSequence(element.numero)">
+                      <mat-icon fontIcon="star"></mat-icon>
+                    </span>
+                </td>
+              </ng-container>
+              <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+              <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+           </mat-card>
+        </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+
+  <! segunda parte -->
+        <div class="description2">
+          <mat-grid-list cols="1" rowHeight="300px">
+            <mat-grid-tile>
+                <mat-card class="sizeDogCard">
+                    <mat-card-title class="sizeDogTitleText">Porte do Pug</mat-card-title>
+                    <div class="imageSizePug">
+                      <img src="/assets/detail.png" alt="">
+                    </div>
+                </mat-card>
+                <mat-card class="furTypeDogCard">
+                    <mat-card-title class="furTitleText">Pelagem</mat-card-title>
+                    <p>
+                      Os pelos do Pug são bem curtinhos, finos e macios.As cores da raça são: prata, abricó, fulvo e preto. Ter o focinho e as
+                      orelhas pretas também faz parte das características da pelagem do Pug. Soltam bastante pelo durante o ano todo, por isso uma
+                      escovação diária ajuda a retirar os pelos mortos e evitar que caiam e se espalhem pela casa toda. Você pode usar uma luva
+                      específica para pets caso a tarefa não seja tão satisfatória com o uso de uma escova comum.
+                    </p>
+                </mat-card>
+            </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+
+  <! terceira parte>
+  <div class="tabBarPug">
+    <mat-tab-group animationDuration="2000ms">
+      <mat-tab label="SAÚDE">Content 1</mat-tab>
+      <mat-tab label="TEMPERAMENTO">Content 2</mat-tab>
+      <mat-tab label="INTELIGÊNCIA">Content 3</mat-tab>
+      <mat-tab label="TEMPO DE VIDA">Content 1</mat-tab>
+      <mat-tab label="CUIDADOS">Content 2</mat-tab>
+      <mat-tab label="CURIOSIDADES">Ser uma das raças mais antigas proporcionou ao Pug participar de vários momentos marcantes da história. A Imperatriz Josephine Bonaparte, esposa de Napoleão Bonaparte, tinha um Pug que era sua paixão, ele se chamava Fortune (fortuna, em português). Na época em que a Imperatriz ficou presa, Fortune era o único que podia visitá-la, por isso Josephine colocava mensagens escondidas na coleira do cãozinho para poder se comunicar com sua família. As ruguinhas tão simpáticas dos Pugs possuem mais significado do que você pensa. Lá na China, os criadores foram moldando a raça para que as ruguinhas da testa do cão formassem (ou chegassem perto de formar) o caractere chinês referente à palavra “príncipe”. A exoftalmia é muito comum em cães de focinho curto, como é o caso do Pequinês e do Pug. Nessa condição, os olhos do animal podem saltar/ sair da órbita ocular. Isso se dá por complicações maiores ou por alguma pressão que o animal faça, como forçar a coleira, por exemplo. Se isso acontecer você não precisa se desesperar, mas deve levar o animal ao médico veterinário com rapidez para tratar e verificar se não houve danos maiores. Na maioria das vezes, é algo reversível.</mat-tab>
+    </mat-tab-group>
+  </div>
