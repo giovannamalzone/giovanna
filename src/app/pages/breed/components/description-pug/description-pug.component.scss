@@ -1,12 +1,13 @@
-.image{
-  background-image: url('https://www.petlove.com.br/images/breeds/192470/header/original/pugs_h.jpg?1521234198');
-  background-size: cover;
-  height: 290px;
-}
-
 .description{
   margin-left: 50px;
   margin-right: 50px;
+  text-align: justify;
+}
+
+.cardBreed{
+  padding: 20px;
+  margin-right: 30px;
+  width: 1250px;
 }
 
 .titleText{
@@ -23,12 +24,6 @@
   font-family: Roboto, "Helvetica Neue", sans-serif
 }
 
-.cardBreed{
-  padding: 20px;
-  margin-right: 30px;
-  width: 1250px;
-}
-
 .table{
   padding: 30px;
   border-radius: 4px;
@@ -43,10 +38,14 @@
 .sizeDogCard{
   padding: 44px;
   margin-right: 30px;
+  margin-bottom: 35px;
+  border-radius: 4px;
 }
 
 .furTypeDogCard{
   padding: 40px;
+  text-align: justify;
+  border-radius: 8px;
 }
 
 .furTitleText{
@@ -67,11 +66,4 @@
   font-weight: 900;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   padding-top: 40px;
-}
-
-.tabBarPug{
-  background-color: white;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
 }

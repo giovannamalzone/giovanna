@@ -9,13 +9,15 @@ import {CdkTableModule} from '@angular/cdk/table';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LabelHomeComponent } from './label-home/label-home.component';
-import { BreedComponent } from './breed/breed.component';
+import { LabelHomeComponent } from './pages/label-home/label-home.component';
+import { BreedComponent } from './pages/breed/breed.component';
+import { DescriptionPugComponent } from "./pages/breed/components/description-pug/description-pug.component";
+import { TabBarComponent } from './pages/breed/components/tab-bar/tab-bar.component';
 
 @NgModule({
-  declarations: [AppComponent, LabelHomeComponent, LabelHomeComponent, BreedComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatTabsModule, MatGridListModule, MatCardModule, MatIconModule, CdkTableModule],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent, LabelHomeComponent, LabelHomeComponent, BreedComponent, DescriptionPugComponent, TabBarComponent],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatTabsModule, MatGridListModule, MatCardModule, MatIconModule, CdkTableModule, ]
 })
 export class AppModule {}

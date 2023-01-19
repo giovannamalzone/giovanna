@@ -1,0 +1,62 @@
+<div class="description">
+  <mat-grid-list cols="1" rowHeight="450px">
+    <mat-grid-tile>
+      <mat-card class="cardBreed">
+        <mat-card-header>
+                <mat-card-title class="titleText">Sobre a Raça Pug</mat-card-title>
+        </mat-card-header>
+        <mat-card-content >
+          <p>
+            Essa raça é uma das mais antigas que existe. Foram encontrados indícios de cachorros muito parecidos com o Pug datados de 1700
+            antes de Cristo! No entanto, não se tem certeza absoluta de sua origem. Existem teorias de que o Pug surgiu do cruzamento de
+            diversas outras raças como o Pequinês ou ainda o Mastife Francês. O que se tem certeza é de que os Pugs surgiram em algum local
+            da China e eram cachorros pertencentes à realeza. Esses cãezinhos foram levados para a Holanda e a partir de lá atingiram outros
+            países da Europa onde receberam diferentes nomes. Na França ficaram conhecidos como "Carlin", na Espanha como "Dugollo", na
+            Alemanha eram os "Mops" e na Itália eram chamados de "Caganlino". Os Pugs chegaram aos EUA após a Guerra Civil e foram
+            reconhecidos como raça oficial pelo Kennel Club em 1885.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="table">
+        <table cdk-table [dataSource]="dataSource">
+            <ng-container cdkColumnDef="name">
+                <th cdk-header-cell *cdkHeaderCellDef align="start" class="titleTableText"> Características </th>
+              <td cdk-cell *cdkCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          <ng-container cdkColumnDef="symbol">
+            <th cdk-header-cell *cdkHeaderCellDef> </th>
+            <td cdk-cell *cdkCellDef="let element">
+                <span *ngFor="let n of numSequence(element.numero)">
+                  <mat-icon fontIcon="star"></mat-icon>
+                </span>
+            </td>
+          </ng-container>
+          <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+          <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+       </mat-card>
+    </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div class="description2">
+      <mat-grid-list cols="1" rowHeight="300px">
+        <mat-grid-tile>
+            <mat-card class="sizeDogCard">
+                <mat-card-title class="sizeDogTitleText">Porte do Pug</mat-card-title>
+                <div class="imageSizePug">
+                  <img src="/assets/detail.png" alt="">
+                </div>
+            </mat-card>
+            <mat-card class="furTypeDogCard">
+                <mat-card-title class="furTitleText">Pelagem</mat-card-title>
+                <p>
+                  Os pelos do Pug são bem curtinhos, finos e macios.As cores da raça são: prata, abricó, fulvo e preto. Ter o focinho e as
+                  orelhas pretas também faz parte das características da pelagem do Pug. Soltam bastante pelo durante o ano todo, por isso uma
+                  escovação diária ajuda a retirar os pelos mortos e evitar que caiam e se espalhem pela casa toda. Você pode usar uma luva
+                  específica para pets caso a tarefa não seja tão satisfatória com o uso de uma escova comum.
+                </p>
+            </mat-card>
+        </mat-grid-tile>
+        </mat-grid-list>
+</div>
