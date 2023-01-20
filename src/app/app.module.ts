@@ -9,15 +9,42 @@ import {CdkTableModule} from '@angular/cdk/table';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LabelHomeComponent } from './pages/label-home/label-home.component';
-import { BreedComponent } from './pages/breed/breed.component';
+import { LabelHomeComponent } from './pages/components/label-home/label-home.component';
+import { BreedComponent } from './pages/breed/breed/breed.component';
 import { DescriptionPugComponent } from "./pages/breed/components/description-pug/description-pug.component";
 import { TabBarComponent } from './pages/breed/components/tab-bar/tab-bar.component';
+import { AboutBistecaComponent } from './pages/bisteca/about-bisteca-page/about-bisteca.component';
+import { CountdownTimerComponent } from './pages/bisteca/components/countdown-timer/countdown-timer.component';
+import { CuriositiesBistecaComponent } from './pages/bisteca/components/curiosities-bisteca/curiosities-bisteca.component';
+import { BottomBarComponent } from './pages/components/bottom-bar/bottom-bar.component';
 
 @NgModule({
-    declarations: [AppComponent, LabelHomeComponent, LabelHomeComponent, BreedComponent, DescriptionPugComponent, TabBarComponent],
+    declarations: [
+      AppComponent,
+      LabelHomeComponent,
+      LabelHomeComponent,
+      BreedComponent,
+      DescriptionPugComponent,
+      TabBarComponent,
+      AboutBistecaComponent,
+      CountdownTimerComponent,
+      CuriositiesBistecaComponent,
+      BottomBarComponent
+    ],
     providers: [],
-    bootstrap: [AppComponent],
-    imports: [BrowserModule, BrowserAnimationsModule, MatToolbarModule, MatTabsModule, MatGridListModule, MatCardModule, MatIconModule, CdkTableModule, ]
+    bootstrap: [
+      AppComponent
+    ],
+    imports: [
+      BrowserModule,
+      BrowserAnimationsModule,
+      MatToolbarModule,
+      MatTabsModule,
+      MatGridListModule,
+      MatCardModule,
+      MatIconModule,
+      CdkTableModule,
+    ],
 })
+
 export class AppModule {}

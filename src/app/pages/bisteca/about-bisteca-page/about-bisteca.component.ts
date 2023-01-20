@@ -1,7 +1,7 @@
-import {DataSource} from '@angular/cdk/collections';
+import { DataSource } from '@angular/cdk/collections';
 import {Component} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
-import { ExampleDataSource } from '../../breed/breed.component';
+import { ExampleDataSource } from '../../breed/breed/breed.component';
 
 export interface PropertyComponent {
   name: string;
@@ -9,6 +9,7 @@ export interface PropertyComponent {
 }
 
 const ELEMENT_DATA: PropertyComponent[] = [
+  {name: '', numero: 1},
   {name: 'Obediência', numero: 3},
   {name: 'Docilidade', numero: 5},
   {name: 'Inteligência', numero: 5},
@@ -19,12 +20,12 @@ const ELEMENT_DATA: PropertyComponent[] = [
 ];
 
 @Component({
-  selector: 'app-description-pug',
-  templateUrl: './description-pug.component.html',
-  styleUrls: ['./description-pug.component.scss']
+  selector: 'app-about-bisteca',
+  templateUrl: './about-bisteca.component.html',
+  styleUrls: ['./about-bisteca.component.scss']
 })
 
-export class DescriptionPugComponent {
+export class AboutBistecaComponent {
   displayedColumns: string[] = ['name', 'symbol'];
   dataSource = new ExampleDataSource();
 
@@ -32,3 +33,4 @@ export class DescriptionPugComponent {
     return Array(n);
   }
 }
+

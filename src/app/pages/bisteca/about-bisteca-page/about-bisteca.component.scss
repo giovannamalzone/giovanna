@@ -1,0 +1,97 @@
+.column {
+  float: left;
+  margin: 0px;
+}
+
+.left {
+  width: 40%;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.right {
+  width: 55%;
+  margin-top: 20px;
+}
+
+.imageBisteca{
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.containerSummary {
+  //height: 400px;
+  background-color:white;
+  margin: 20px;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.container{
+  background-color: white;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.titleText{
+  font-size: x-large;
+  font-weight: 900;
+  font-family: Roboto, "Helvetica Neue", sans-serif
+}
+
+.first{
+  width: 50%;
+}
+
+.second{
+  width: 50%;
+}
+
+.table{
+  margin: 20px;
+  //margin-bottom: 40px;
+  padding: 20px;
+}
+
+.titleTableText{
+  font-size: x-large;
+  font-weight: 900;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding-bottom: 20px;
+}
+
+.info{
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.preferences{
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.countdown{
+  background-color: white;
+  margin: 20px;
+  height: 279px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerCuriosities {
+  //height: auto;
+  background-color:white;
+  margin: 20px;
+  text-align: justify;
+  border-radius: 5px;
+  padding: 20px;
+  //position: absolute;
+}

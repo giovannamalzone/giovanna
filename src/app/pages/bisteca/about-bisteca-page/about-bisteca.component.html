@@ -1,0 +1,130 @@
+<div class="row">
+  <div class="column left">
+    <div class="container">
+      <img
+        src="./assets/bisteca.jpeg"
+        alt="Photo of Bisteca"
+        width="600px"
+        class="imageBisteca"
+      />
+      <div class="container info">
+        <div class="titleText">INFORMAÇÕES PRINCIPAIS</div>
+        <p>
+          Nome completo: Bisteca Malzone<br />
+          Origem: Piracaia/SP<br />
+          Nascimento: 15/10/2016 (6 anos)<br />
+          Sexo: Feminino<br />
+          Raça: Pug<br />
+          Cor: Abricot<br />
+          Signo: Libra<br />
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container preferences">
+        <div class="titleText">GOSTOS E MEDOS</div>
+        <p>
+          Refeições: Caldo de frango com pedaços<br />
+          Frutas: Maçã e melão<br />
+          Hobbies: Passear pelas ruas e assistir TV<br />
+          Medos: Bacia de roupas e cortador de grama<br />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column right">
+    <div class="containerSummary">
+      <div class="titleText">RESUMO GERAL</div>
+      <p>
+        Essa raça é uma das mais antigas que existe. Foram encontrados indícios
+        de cachorros muito parecidos com o Pug datados de 1700 antes de Cristo!
+        No entanto, não se tem certeza absoluta de sua origem. Existem teorias
+        de que o Pug surgiu do cruzamento de diversas outras raças como o
+        Pequinês ou ainda o Mastife Francês. O que se tem certeza é de que os
+        Pugs surgiram em algum local da China e eram cachorros pertencentes à
+        realeza. Esses cãezinhos foram levados para a Holanda e a partir de lá
+        atingiram outros países da Europa onde receberam diferentes nomes. Na
+        França ficaram conhecidos como "Carlin", na Espanha como "Dugollo", na
+        Alemanha eram os "Mops" e na Itália eram chamados de "Caganlino". Os
+        Pugs chegaram aos EUA após a Guerra Civil e foram reconhecidos como raça
+        oficial pelo Kennel Club em 1885.
+      </p>
+    </div>
+
+    <div class="row subrow">
+      <div class="column first">
+        <mat-card class="table">
+          <table cdk-table [dataSource]="dataSource">
+            <ng-container cdkColumnDef="name">
+              <th
+                cdk-header-cell
+                *cdkHeaderCellDef
+                align="start"
+                class="titleTableText"
+              >
+                CARACTERÍSTICAS
+              </th>
+              <td cdk-cell *cdkCellDef="let element">{{ element.name }}</td>
+            </ng-container>
+            <ng-container cdkColumnDef="symbol">
+              <th cdk-header-cell *cdkHeaderCellDef></th>
+              <td cdk-cell *cdkCellDef="let element">
+                <span *ngFor="let n of numSequence(element.numero)">
+                  <mat-icon fontIcon="star"></mat-icon>
+                </span>
+              </td>
+            </ng-container>
+            <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+            <tr cdk-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+        </mat-card>
+      </div>
+      <div class="column second">
+        <div class="countdown">
+          <span class="titleText">FALTAM</span>
+          <app-countdown-timer></app-countdown-timer>
+          <span class="titleText">PARA O 7º ANIVERSÁRIO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="containerCuriosities">
+          <div class="titleText">CURIOSIDADES</div>
+          <p>
+            🦴 Tem medo de outros cachorros, mas sempre late quando avista
+            um;<br />
+            🐶 Paticipou de um clipe musical sertanejo em 2018 da música "E se
+            ele atender?" (o video pode ser acessado aqui);<br />
+            🐾 Faz cara de pidona quando quer um petisco ou sair para
+            passear;<br />
+            🦴 Ao contrário da grande maioria dos cachorros, a Bisteca não dá a
+            mínima para fogos de artifício;<br />
+            🐶 Pulou dentro de um espelho d'água quando tinha apenas 3 meses de
+            vida e ficou chorando até ser resgatada (o video pode ser acessado aqui);<br />
+            🐾 Sabe a rotina de todos da casa, quando saem e quando voltam, além
+            de identificar os dias de trabalho, finais de semana e feriados pela
+            cor da roupa dos seus humanos;<br />
+            🦴 Não se incomoda com ninguém que vá visitar seus humanos, mas
+            identifica quando alguém não gosta de animais e demonstra atarvés do
+            latido;<br />
+            🐶 Quando era filhote ficou dias sem comer e com aparência abatida.
+            Um veterinário foi consultado e não se sabia qual era o mau que ela
+            estava suportando. Os donos tiraram a coleira de identificação com
+            nome e telefone (se acaso se perdesse) para que ela se sentisse
+            melhor, momento em que se percebeu que tudo não passava de um drama
+            canino para não usar a coleira;<br />
+            🐾 Todos os anos a família se reúne para fazer sua festa de
+            aniversário; e<br />
+            🦴 Geralmente as pessoas perguntam primeiro por ela e depois pelas
+            pessoas da casa.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
