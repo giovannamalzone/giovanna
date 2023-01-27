@@ -55,30 +55,32 @@
 
     <div class="row subrow">
       <div class="column first">
-        <mat-card class="table">
-          <table cdk-table [dataSource]="dataSource">
-            <ng-container cdkColumnDef="name">
-              <th
-                cdk-header-cell
-                *cdkHeaderCellDef
-                align="start"
-                class="titleTableText"
-              >
-                CARACTERÍSTICAS
-              </th>
-              <td cdk-cell *cdkCellDef="let element">{{ element.name }}</td>
-            </ng-container>
-            <ng-container cdkColumnDef="symbol">
-              <th cdk-header-cell *cdkHeaderCellDef></th>
-              <td cdk-cell *cdkCellDef="let element">
-                <span *ngFor="let n of numSequence(element.numero)">
-                  <mat-icon fontIcon="star"></mat-icon>
-                </span>
-              </td>
-            </ng-container>
-            <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
-            <tr cdk-row *cdkRowDef="let row; columns: displayedColumns"></tr>
-          </table>
+        <mat-card class="tableNew">
+          <mat-card-content>
+            <table cdk-table [dataSource]="dataSource">
+              <ng-container cdkColumnDef="name">
+                <th
+                  cdk-header-cell
+                  *cdkHeaderCellDef
+                  align="start"
+                  class="titleTableText"
+                >
+                  CARACTERÍSTICAS
+                </th>
+                <td cdk-cell *cdkCellDef="let element">{{ element.name }}</td>
+              </ng-container>
+              <ng-container cdkColumnDef="symbol">
+                <th cdk-header-cell *cdkHeaderCellDef></th>
+                <td cdk-cell *cdkCellDef="let element">
+                  <span *ngFor="let n of numSequence(element.numero)">
+                    <mat-icon fontIcon="star"></mat-icon>
+                  </span>
+                </td>
+              </ng-container>
+              <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+              <tr cdk-row *cdkRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+          </mat-card-content>
         </mat-card>
       </div>
       <div class="column second">
@@ -126,5 +128,5 @@
       </div>
     </div>
   </div>
- 
+
 </div>

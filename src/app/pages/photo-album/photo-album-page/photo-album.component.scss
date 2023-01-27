@@ -1,0 +1,93 @@
+.style{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 200px;
+  //background-color: black;
+}
+
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+.main-scroll.div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+}
+
+.cover{
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.cover::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150%;
+  //background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150%;
+  //background-image: linear-gradient(-90deg, black, transparent);
+}
+
+.scroll-images{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.child{
+  min-width: 600px;
+  height: 450px;
+  margin: 1px 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.child-img{
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-images::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+
+.icon{
+  color: green;
+  //background-color: black;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  padding: opx 20px;
+}
+
+.icon::hover{
+  color: yellow;
+}

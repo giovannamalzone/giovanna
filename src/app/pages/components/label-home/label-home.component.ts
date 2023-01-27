@@ -4,6 +4,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-label-home',
   templateUrl: './label-home.component.html',
   styleUrls: ['./label-home.component.scss'],
-  // encapsulation: ViewEncapsulation.None,
 })
 export class LabelHomeComponent {}
