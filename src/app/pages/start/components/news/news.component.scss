@@ -1,0 +1,89 @@
+.carousel {
+  background: white;
+  width: 750px;
+  height: 700px;
+  border-radius: 5px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.imagem {
+  text-align: center;
+  color: #ff4081;
+}
+
+.containerTitle {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 900;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  display: none;
+  position: relative;
+  align-items: center;
+}
+
+.active {
+  display: block !important;
+}
+
+.indicator {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 99px;
+  margin: 5px;
+}
+
+.indicatorContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titleText {
+  font-size: x-large;
+  font-weight: 900;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //height: 50px;
+}
+
+.containerInfo {
+  height: 215px;
+  width: 580px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.moreInformations {
+  color: rgb(255, 40, 148);
+}
+
+.buttonL {
+  height: 50px;
+  width: 100px;
+  margin-left: 10px;
+  border-style: none;
+  background: none;
+}
+
+.buttonR {
+  height: 50px;
+  width: 100px;
+  margin-right: 10px;
+  border-style: none;
+  background: none;
+}

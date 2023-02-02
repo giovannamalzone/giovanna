@@ -1,0 +1,37 @@
+<div class="carousel">
+  <div class="containerTitle">NOTÍCIAS</div>
+  <div class="carouselContainer" >
+    <button (click)="back()" class="buttonL">
+      <img src="assets/arrow-right.jpg" alt="" width="30px" height="30px">
+    </button>
+    <ng-container *ngFor="let new of news; index as i">
+      <div class="wrapper" [ngClass]="{'active': i === active}">
+        <div class="imagem">
+          <img src="{{ new.imagem }}" alt="" width="540px" height="350px"/>
+        </div>
+        <div class="containerInfo">
+          <div class="titleText">{{ new.titulo }}</div>
+          <div>
+            {{ new.descricao }}
+            <a
+              href="https://accenture.percipio.com/login?state=%2F#/"
+              class="moreInformations"
+            >
+              + informações
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </ng-container>
+    <button (click)="next()" class="buttonR">
+      <img src="assets/arrow-left.jpg" alt="" width="30px" height="30px">
+    </button>
+  </div>
+
+  <div class="indicatorContainer">
+    <span *ngFor="let new of news; index as i" [style.background]="i === active ? 'rgb(255, 40, 148)' : 'lightgray'" class="indicator">
+
+    </span>
+  </div>
+</div>

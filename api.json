@@ -1,0 +1,57 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "titulo": "Final Feliz",
+      "descricao": "Furtado há nove meses, cachorro é encontrado pela Polícia Civil de Caxias Pug Edgar foi entregue para a família nesta semana. Animal foi achado após uma denúncia",
+      "imagem": "https://zh.rbsdirect.com.br/imagesrc/23266466.jpg?w=700",
+      "mais informações": "https://gauchazh.clicrbs.com.br/pioneiro/noticia/2017/05/furtado-ha-nove-meses-cachorro-e-encontrado-pela-policia-civil-de-caxias-9785436.html"
+    },
+    {
+      "id": 2,
+      "titulo": "Prefeitura vende cão de família alemã devedora",
+      "descricao": "Os fiscais da cidade de Ahlen inicialmente queriam levar a cadeira de rodas de um dos membros da família, mas mudaram de ideia.",
+      "imagem": "https://www.rbsdirect.com.br/imagesrc/17680616.jpg?w=120&h=80&a=c",
+      "mais informações": "https://gauchazh.clicrbs.com.br/pioneiro/noticia/2017/05/furtado-ha-nove-meses-cachorro-e-encontrado-pela-policia-civil-de-caxias-9785436.html"
+    },
+    {
+      "id": 3,
+      "titulo": "Final Feliz",
+      "descricao": "Furtado há nove meses, cachorro é encontrado pela Polícia Civil de Caxias Pug Edgar foi entregue para a família nesta semana. Animal foi achado após uma denúncia",
+      "imagem": "https://zh.rbsdirect.com.br/imagesrc/23266466.jpg?w=700",
+      "mais informações": "https://gauchazh.clicrbs.com.br/pioneiro/noticia/2017/05/furtado-ha-nove-meses-cachorro-e-encontrado-pela-policia-civil-de-caxias-9785436.html"
+    }
+  ],
+  "recados": [
+    {
+      "id": 1,
+      "autor": "Giovanna",
+      "recado": "Furtado há nove meses, cachorro é encontrado pela Polícia Civil de Caxias Pug Edgar foi entregue para a família nesta semana. Animal foi achado após uma denúncia Furtado há nove meses, cachorro é encontrado pela Polícia Civil de Caxias Pug Edgar foi entregue para a família nesta semana. Animal foi achado após uma denúncia"
+    },
+    {
+      "id": 2,
+      "autor": "Bruno",
+      "recado": "A Bisteca é maravilhosa"
+    },
+    {
+      "id": 3,
+      "autor": "Dani",
+      "recado": "A Bisteca é bonita"
+    },
+    {
+      "autor": "Gi",
+      "recado": "linda",
+      "id": 4
+    },
+    {
+      "autor": "Mauro",
+      "recado": "legal",
+      "id": 5
+    },
+    {
+      "autor": "Gi",
+      "recado": "linda",
+      "id": 6
+    }
+  ]
+}

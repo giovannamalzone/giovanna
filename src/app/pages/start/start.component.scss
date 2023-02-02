@@ -1,0 +1,28 @@
+.column {
+  float: left;
+  margin: 0px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 35%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.container{
+  background-color: white;
+  margin: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.titleText{
+  font-size: x-large;
+  font-weight: 900;
+  font-family: Roboto, "Helvetica Neue", sans-serif
+}
+

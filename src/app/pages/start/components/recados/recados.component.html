@@ -1,0 +1,40 @@
+<div class="carousel">
+  <div class="containerTitle">MURAL DE RECADOS</div>
+  <div class="carouselContainer" >
+    <button (click)="back()" class="buttonL">
+      <img src="assets/arrow-right.jpg" alt="" width="30px" height="30px">
+    </button>
+    <ng-container *ngFor="let recado of recados; index as i">
+      <div class="wrapper" [ngClass]="{'active': i === active}">
+        <div class="containerInfo">
+          <div>Escrito por: {{ recado.autor }}</div>
+          <div class="recado">"{{ recado.recado }}"</div>
+          <div>{{ recado.hora }} </div>
+        </div>
+      </div>
+    </ng-container>
+    <button (click)="next()" class="buttonR">
+      <img src="assets/arrow-left.jpg" alt="" width="30px" height="30px">
+    </button>
+  </div>
+  <div class="indicatorContainer">
+    <span *ngFor="let recado of recados; index as i" [style.background]="i === active ? 'rgb(255, 40, 148)' : 'lightgray'" class="indicator">
+    </span>
+  </div>
+</div>
+
+ <div class="leaveMessage">
+  <div class="containerTitleMessage">DEIXE O SEU RECADO</div>
+  <div class="containerMessage">
+    <form>
+      <p>
+        <input type="text" placeholder="Insira seu nome" name="autor" [(ngModel)]="recado.autor" class="inputA"/>
+      </p>
+      <p>
+        <input type="text" placeholder="Escreva sua mensagem" name="recado" [(ngModel)]="recado.recado" class="inputR"/>
+      </p>
+      <button type="button" (click)="cadastrar()" class="buttonSend">ENVIAR</button>
+    </form>
+  </div>
+</div>
+
